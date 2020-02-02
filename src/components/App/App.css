@@ -1,24 +1,80 @@
 .App {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.MovieList {
   text-align: center;
+  background-color: black;
 }
 
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.MovieList-Header {
+  font-size: 75px;
+  font-family: 'Bungee Shade', cursive;
   color: white;
+  margin-top: 0px;
+  padding-top: 30px;
+  padding-bottom: 0px;
 }
 
-.App-title {
-  font-size: 1.5em;
+.MovieItem-Card {
+  margin: 10px;
 }
 
-.App-intro {
-  font-size: large;
+.MovieItem-Poster {
+  border-color: grey;
+  border-style: solid;
+  border-width: 1px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.MovieItem-Icon {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.Details-Description {
+  padding: 20px;
+}
+
+.Details-DescriptionContainer {
+  margin: 20px;
+}
+
+.Details-MovieTitle {
+  font-size: 50px;
+  font-family: 'Bungee Shade', cursive;
+  color: black;
+  padding: 0px 20px;
+}
+
+.Details-ImgGenreContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.Details-AppBar {
+  padding: 10px 20px;
+}
+
+.Edit-AppBar {
+  padding: 10px 20px;
+}
+
+.Edit-ImgGenreContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.Edit-Description {
+  width: 60%;
+  height: 300px;
+}
+
+.Edit-FormContainer {
+  margin: 20px;
 }
