@@ -28,7 +28,7 @@ router.get('/details/:id', (req, res) => {
             res.send(result.rows)
         })
         .catch(error => {
-            console.log('Error completing SELECT details query', error);
+            console.log('Error completing query', error);
             res.sendStatus(500);
         });
 });

@@ -35,7 +35,7 @@ function* getMoviesSaga() {
 function* selectedMovieSaga(action) {
     try {
         const details = yield axios.get(`/movie/details/${action.payload}`);
-        console.log('selectedMovieSaga details.data[0]: ', details.data[0]);
+        //console.log('selectedMovieSaga details.data[0]: ', details.data[0]);
         yield put({ type: "SET_MOVIE_DETAILS", payload: details.data[0] });
     } catch (error) {
         console.log('Error in selectMovieSaga', error);
